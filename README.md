@@ -16,6 +16,7 @@ public class GenericTask : IScheduledTask
         // do something
     }
 }
+```
 
 Register the Task
 ---------------
@@ -30,6 +31,7 @@ public class Global : System.Web.HttpApplication
 		Scheduler.Schedule<GenericTask>(new Daily(3, 30, "Eastern Standard Time"));
 	}
 }
+```
 
 (Optional) Create a Schedule
 ---------------
@@ -50,3 +52,4 @@ public class Interval : ISchedule
         return DateTime.UtcNow.AddSeconds(_seconds);
     }
 }
+```
