@@ -1,7 +1,7 @@
 ScheduleMagic
 ===============
 
-A simple task scheduler.
+A simple ASP.NET task scheduler.
 
 Create a Task
 ---------------
