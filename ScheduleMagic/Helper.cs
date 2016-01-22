@@ -45,7 +45,11 @@ namespace ScheduleMagic
 
                     if (IsType<IScheduledTask>(scheduledTask))
                     {
-                        ((IScheduledTask)scheduledTask).DoWork();
+                        try
+                        {
+                            ((IScheduledTask)scheduledTask).DoWork();
+                        }
+                        catch { }
 
                         Helper.Insert(wrapper);
                     }
